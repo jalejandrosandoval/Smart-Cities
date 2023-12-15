@@ -1,0 +1,20 @@
+{
+  "name": "smatcities",
+  "version": "1.0.0",
+  "description": "Proyecto de Tesis de Maestría en Gestión Aplicación y Desarrollo de Software.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@astrojs/tailwind": "^5.0.3",
+    "astro": "^4.0.4",
+    "tailwindcss": "^3.3.6"
+  }
+}
