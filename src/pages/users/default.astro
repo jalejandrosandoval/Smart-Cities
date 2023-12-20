@@ -1,9 +1,23 @@
-<h1 class="">Smart Cities</h1>
-<div>
-    <h2>Chat Embed</h2>
-    <div>
+---
+import NavBar from '@/Components/shared/NavBar.astro'
+import Copyright from '@/Components/shared/Copyright.astro';
+---
+
+<div class="flex min-h-full h-screen flex-col">
+    <NavBar> </NavBar>
+
+    <div class="p-8 bg-gray-300">
+        <h2 class="text-center text-lg font-bold pb-8">Chat Embed</h2>
+
         <iframe
-            src="https://webchat.botframework.com/embed/Language-SmartCities-bot?s=YRs1TgZjfes.6QFoUq4AC23QoevIGMQAS1ATRB8_EYhJaaF3x3RNzoY"
+            src="https://webchat.botframework.com/embed/SmartCitiesBot?s=UD2uy4oKM6cdIRZl1K8ONN4XEU2CDo7aRWFPQ4UZNsAzSeCJfana"
             style="min-width: 400px; width: 100%; min-height: 500px;"></iframe>
+    </div>
+    
+</div>
+
+<div class="relative">
+    <div class="absolute inset-x-0 bottom-0"> 
+        <Copyright></Copyright>
     </div>
 </div>
