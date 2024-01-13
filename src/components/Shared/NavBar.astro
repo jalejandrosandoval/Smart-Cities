@@ -1,18 +1,32 @@
-<nav class="flex items-center justify-between flex-wrap bg-teal-950 p-2">
+<nav class="flex items-center justify-between flex-wrap sm:bg-slate-500 lg:bg-white lg:bg-opacity-25 p-2 z-50">
   <div class="flex items-center flex-shrink-0 text-white mr-6">
-    <img class="rounded-2xl bg-opacity-30 bg-white fill-current h-20 w-20 mr-2" src="/img/smart-city.png" />
-    <span class="font-semibold text-xl tracking-tight">SmartCities AMB...</span>
+    <img class="rounded-2xl bg-opacity-30 bg-white fill-current h-20 w-20 sm:h-12 sm:w-12 mr-2" alt="Logo SMARTCities AMB" src="/img/smart-city.png" />
+    <span class="font-semibold text-xl sm:text-lg tracking-tight">SmartCities AMB...</span>
   </div>
   <div class="block lg:hidden">
-    <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-      <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+    <button class="flex items-center px-3 py-2 border rounded-lg text-white hover:text-teal-400 hover:border-teal-400" id="toggle-menu-button">
+      <svg class="fill-current h-4 w-4" viewBox="0 0 20 20"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
     </button>
   </div>
-  <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-    <div class="text-sm lg:flex-grow">
-      <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-        Chat...
+  <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto sm:hidden" id="toggle-menu">
+    <div class="text-lg sm:text-sm lg:flex-grow">
+      <a href="/users/default" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-teal-400 mr-4">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+          <path fill-rule="evenodd" d="M9.293 2.293a1 1 0 0 1 1.414 0l7 7A1 1 0 0 1 17 11h-1v6a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-6H3a1 1 0 0 1-.707-1.707l7-7Z" clip-rule="evenodd" />
+        </svg>             
+      </a>
+      <a href="/users/inquiry" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-teal-400  mr-4">
+        Encuesta
       </a>
     </div>
   </div>
 </nav>
+
+<script>
+	var button = document.querySelector('#toggle-menu-button');
+  var menu = document.querySelector('#toggle-menu');
+
+  button.addEventListener('click', (e)=>{
+    menu.classList.toggle('sm:hidden');
+  });
+</script>

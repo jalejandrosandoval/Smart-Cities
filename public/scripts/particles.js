@@ -27,7 +27,7 @@ var pJS = function(tag_id, params){
         }
       },
       color: {
-        value: '#fff'
+        value: '#ffffff'
       },
       shape: {
         type: 'circle',
@@ -56,18 +56,18 @@ var pJS = function(tag_id, params){
       },
       size: {
         value: 20,
-        random: false,
+        random: true,
         anim: {
           enable: false,
-          speed: 20,
+          speed: 40,
           size_min: 0,
           sync: false
         }
       },
       line_linked: {
         enable: true,
-        distance: 100,
-        color: '#fff',
+        distance: 150,
+        color: '#ffffff',
         opacity: 1,
         width: 1
       },
@@ -88,7 +88,7 @@ var pJS = function(tag_id, params){
       array: []
     },
     interactivity: {
-      detect_on: 'canvas',
+      detect_on: 'window',
       events: {
         onhover: {
           enable: true,

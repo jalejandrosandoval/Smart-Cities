@@ -1,0 +1,37 @@
+---
+import Inquiry from "@/Components/users/Inquiry.astro";
+import NavBar from "@/Components/shared/NavBar.astro";
+import Copyright from "@/Components/shared/Copyright.astro";
+
+export interface Props {
+  route: string;
+}
+
+const { route } = Astro.props as Props;
+---
+
+<div class="relative w-full overflow-hidden h-screen bg-gray-800" id="particles-js">
+  <div class="absolute inset-x-0 top-0 z-50">
+    <NavBar />
+  </div>  
+  {
+    () => {
+      if (route === "default") {
+        return (
+          <h2 class="absolute inset-x-9 top-9 text-center text-lg font-bold p-10 text-gray-200">Home...</h2>
+        );
+      } else return <Inquiry/>;
+    }
+  }
+
+<div class="absolute inset-x-0 bottom-0">
+    <Copyright />
+  </div>
+</div>
+
+<script is:inline src="/scripts/particles.js"></script>
+<script is:inline>
+  particlesJS.load("particles-js", "/assets/particles.json", function () {
+    console.log("callback - particles.js config loaded");
+  });
+</script>

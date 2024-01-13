@@ -8,6 +8,9 @@
       ],
       "@/Components/*":[
         "src/components/*"
+      ],
+      "@/Pages/*":[
+        "src/components/Pages/*"
       ]
     }
   }
