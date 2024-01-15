@@ -3,14 +3,11 @@ import { Utils } from '@/libs/utils';
 import { Auth0Client } from "@auth0/auth0-spa-js";
 
 const uidBtnIngresar = new Utils().uid();
-const uidInputEmail = new Utils().uid();
-const uidInputPass = new Utils().uid();
-const uidInputRemenber = new Utils().uid();
 
-const _auth0 = new Auth0Client({
+const _auth0 = {
   domain: "dev-kcy3reakiy7ti8ld.us.auth0.com",
-  clientId: "FkfT6XX4pwTr6F1XAJL89kP1WcTHkaRc"
-});
+  clientId: "FkfT6XX4pwTr6F1XAJL89kP1WcTHkaRc", 
+};
 ---
 
 <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
@@ -18,7 +15,7 @@ const _auth0 = new Auth0Client({
     id={uidBtnIngresar}
     type="button"
     class="w-full text-white bg-blue-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
-    >Ingresar
+    >Ingresa o Registrate
   </button>
 </div>
 
@@ -29,6 +26,5 @@ const _auth0 = new Auth0Client({
 
   // const _auth0 = await configureClientAuth0;
   // console.log(configureClientAuth0);
-  _auth.Init(_auth0);
-  _auth.AddClickBtn(uidBtnIngresar);
+  _auth.AddClickBtn({uidBtnIngresar, _auth0});
 </script>
