@@ -1,0 +1,17 @@
+---
+import { NavBarValidation } from "@/preact/shared/navbar";
+---
+
+<nav class="flex items-center flex-wrap bg-slate-500 p-2 z-50">
+  <div class="flex items-center flex-shrink-0 text-white mr-6">
+    <img
+      class="rounded-2xl bg-opacity-30 bg-white fill-current h-20 w-20 sm:h-12 sm:w-12 mr-2"
+      alt="Logo SMARTCities AMB"
+      src="/img/smart-city.png"
+    />
+    <span class="font-semibold text-xl sm:text-lg tracking-tight"
+      >SmartCities AMB...</span
+    >
+  </div>
+  <NavBarValidation client:only="preact" />
+</nav>

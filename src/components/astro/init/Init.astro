@@ -1,0 +1,65 @@
+---
+import Copyright from "@/astro/shared/Copyright.astro";
+import Login from "@/astro/auth/Login.astro";
+---
+
+<div class="flex min-h-full w-screen flex-col">
+  <div class="grid sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-12 gap-0">
+    <div class="sm:col-span-6 md:col-span-5 lg:col-span-8">
+      <div
+        class="bg-cover bg-center w-full relative overflow-hidden block z-10 h-screen before:content-[''] before:absolute before:inset-0 before:block before:bg-gradient-to-r before:from-red-100 before:to-red-400 before:opacity-30 before:z-[-5]"
+        style="background-image: url(/img/amb.jpg)"
+      >
+        <div class="visible sm:visible md:invisible lg:invisible">
+          <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-screen"
+          >
+            <Login />
+          </div>
+        </div>
+        <div class="absolute inset-x-0 bottom-0">
+          <nav
+            class="nav border-bsticky top-0 z-30 bg-opacity-70 bg-gray-800 left-0 flex w-full"
+          >
+            <div
+              class="mx-auto flex flex-col md:flex-row items-center justify-between px-4 py-2"
+            >
+              <ul
+                class="grid grid-cols-12 gap-2 flex-col md:flex-row items-center"
+              >
+                <li class="sm:col-span-2 lg:col-span-1">
+                  <a href="/">
+                    <img
+                      class="rounded-2xl bg-opacity-30 bg-white"
+                      style="min-width: auto; width: auto; min-height: auto; height:auto"
+                      src="/img/smart-city.png"
+                      alt="SmartCities AMB..."
+                    /></a
+                  >
+                </li>
+                <li class="sm:col-span-10 lg:col-span-11">
+                  <a
+                    href="/"
+                    class="flex items-center font-bold sm:text-3xl md:text-4xl lg:text-4xl text-white"
+                  >
+                    <h1>SmartCities AMB<span>●●●</span></h1>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="md:col-span-3 lg:col-span-4">
+      <div class="sm:invisible md:visible lg:visible">
+        <Login />
+        <div class="relative">
+          <div class="absolute inset-x-0 bottom-0">
+            <Copyright />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

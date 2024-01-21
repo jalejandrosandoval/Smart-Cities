@@ -1,33 +1,33 @@
 ---
-import { ViewTransitions } from 'astro:transitions';
-import InitUser from '@/components/users/InitUser.astro';
+import InitUser from "@/astro/users/InitUser.astro";
+import { GetSession } from "@/preact/auth/auth";
 
 export interface Props {
   title: string;
   route: string;
 }
 
-const { title } = Astro.props as Props;
-const { route } = Astro.props as Props;
+const { title, route } = Astro.props as Props;
 ---
 
-<!doctype html>
 <html>
   <head>
-    <meta charset="utf-8" />  
-	  <meta name="viewport" content="width=device-width" /> 
-    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
     <meta name="generator" content={Astro.generator} />
-    <meta name="description" content="A Project Smart Cities...">
-	  <link rel="icon" type="image/svg+xml" href="/img/smart-city.png">
+    <meta name="description" content="A Project Smart Cities..." />
+    <link rel="icon" type="image/svg+xml" href="/img/smart-city.png" />
     <title>{title}</title>
   </head>
   <body>
-    <InitUser route={route}></InitUser>
+    <GetSession client:only="preact">
+      <InitUser route={route} />
+    </GetSession>
   </body>
 </html>
 <style>
-  body{
+  body {
     font-family: system-ui;
   }
 </style>

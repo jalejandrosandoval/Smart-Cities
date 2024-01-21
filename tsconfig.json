@@ -1,17 +1,22 @@
 {
   "extends": "astro/tsconfigs/base",
   "compilerOptions": {
-    "baseUrl": ".",
+    "baseUrl": "D:/ESCRITORIO/REPOSITORIOS/Smart-Cities",
     "paths": {
-      "@/*":[
+      "@/*": [
         "src/*"
       ],
-      "@/Components/*":[
-        "src/components/*"
+      "@/astro/*": [
+        "src/components/astro/*"
       ],
-      "@/Pages/*":[
+      "@/preact/*": [
+        "src/components/preact/*"
+      ],
+      "@/pages/*": [
         "src/components/Pages/*"
       ]
-    }
+    },
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact"
   }
 }

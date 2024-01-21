@@ -1,0 +1,14 @@
+---
+import { Auth } from "@/preact/auth/login";
+import { Utils } from "@/preact/utils/utils";
+import AuthConfig from "@/config/auth0_config.json";
+
+const uidBtnIngresar = new Utils().uid();
+const _auth0Params = AuthConfig;
+---
+
+<div
+  class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0"
+>
+  <Auth client:load uidBtn={uidBtnIngresar} auth0={_auth0Params} />
+</div>

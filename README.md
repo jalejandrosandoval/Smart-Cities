@@ -1,17 +1,49 @@
 # Proyecto SmartCities
 
-Proyecto de Tesis de Maestría en Gestión Aplicación y Desarrollo de Software.
+Proyecto de Tesis de Grado para la Maestría en Gestión Aplicación y Desarrollo de Software de la Universidad Aútonoma de Bucaramanga.
+
+Desarrollado por: <b> Jhon Alejandro Sandoval Miranda.</b>
+
+## Contexto
+
+Proyecto de desarrollo de Software: Creación de un sitio web por medio del uso de Astro, Preact, Tailwind, Auth0, Microsoft Copilot, entre otras tecnologías, para ayudar en la toma de desiciones en el área de la movilidad del AMB basado en modelos o conceptos de SMARTCities de la Industria 4.0
+
+## Tecnologías Usadas
+
+* Astro.
+* Preact.
+* Tailwind.
+* Auth0.
+* NodeJS.
+* Microsoft Copilot.
+* JS.
+* HTML.
+* PowerBI.
 
 ## Estructura Principal de Archivos
 
 ```bash
 ├─ public
+│   ├─ assets
 │   ├─ img
 │   └─ icons
 └─ src
     ├─ components
+    │   ├─ astro
+    │   │   ├─ auth
+    │   │   ├─ init
+    │   │   ├─ shared
+    │   │   └─ users 
+    │   └─ preact
+    │       ├─ auth
+    │       ├─ shared
+    │       └─ utils 
+    ├─ config
     ├─ layouts
+    ├─ libs
     └─ pages
+        ├─ admin
+        └─ users
 ```
 
 ## Inicialización de los proyectos
@@ -51,10 +83,11 @@ A:
 npm i astro@latest
 ```
 
-* Comando para instalar otras dependencias (tailwind).
+* Comando para instalar otras dependencias (tailwind, preact).
 
 ```sh
 npx astro add tailwind
+npx astro add preact
 ```
 
 * Comando para iniciar la aplicación
@@ -62,3 +95,9 @@ npx astro add tailwind
 ```sh
 npm run dev
 ```
+
+# Documentación
+
+* [Preact](https://preactjs.com/).
+* [Tailwind](https://tailwindcss.com/).
+* [Astro](https://docs.astro.build/es/getting-started/).
