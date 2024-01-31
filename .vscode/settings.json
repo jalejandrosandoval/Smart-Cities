@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/f43a71f7-1be3-4638-9941-4daa32886d6b/resourceGroups/SMARTCITIES/providers/Microsoft.Web/sites/smartcitiesambmgads",
+    "appService.deploySubpath": "."
+}
