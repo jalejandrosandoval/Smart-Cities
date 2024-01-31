@@ -21,9 +21,3 @@ export function LoadScriptBackground() {
   };
   document.head.appendChild(script);
 }
-
-export function EachElement(selector, fn) {
-  for (let e of document.querySelectorAll(selector)) {
-    fn(e);
-  }
-}

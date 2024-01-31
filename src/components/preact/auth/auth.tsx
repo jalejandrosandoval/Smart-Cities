@@ -157,7 +157,7 @@ export function GetUser() {
 
     const user = { isAuthenticated, userProfile };
     const isAuth = ValidAuth(user);
-
+    
     if (isAuth) {
       const profileUser = ProfileUser({ _userProfile: user });
       return profileUser;
