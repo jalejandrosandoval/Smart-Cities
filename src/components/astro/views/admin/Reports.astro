@@ -1,0 +1,26 @@
+---
+export interface Props {
+  subTitle: string;
+}
+
+const { subTitle } = Astro.props as Props;
+---
+
+<h2
+  class="absolute inset-x-9 top-9 text-center text-lg font-bold p-10 text-gray-200"
+>
+  {subTitle}
+</h2>
+<div
+  transition:animate="fade"
+  class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full"
+>
+  <div class="flex items-center justify-center top-10">
+    <iframe
+      class="rounded-xl"
+      title="ReportePowerBI_SmartCitiesAMB"
+      style="min-width: 500px; width: 70%; min-height: 700px; height:80%"
+      src="https://app.powerbi.com/view?r=eyJrIjoiZWYyOTY0ZTctNzA0ZS00ZmE5LWFjNjktZmJhZDYxMmJjMzA2IiwidCI6IjMyYzY3YTRlLTIzZjMtNDFhZC1iNDYzLWE4MDdiZDFmMmM5YiIsImMiOjR9"
+    ></iframe>
+  </div>
+</div>

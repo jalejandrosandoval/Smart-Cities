@@ -1,19 +1,23 @@
 ---
-import InitUser from "@/astro/users/InitUser.astro";
+import InitViews from "@/components/astro/views/init/InitViews.astro";
 import { GetSession } from "@/preact/auth/auth";
 
 export interface Props {
   title: string;
+  subTitle: string;
   route: string;
 }
 
-const { title, route } = Astro.props as Props;
+const { title, subTitle, route } = Astro.props as Props;
 ---
 
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+    />
     <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content="A Project Smart Cities..." />
@@ -22,7 +26,7 @@ const { title, route } = Astro.props as Props;
   </head>
   <body>
     <GetSession client:only="preact">
-      <InitUser route={route} />
+      <InitViews subTitle={subTitle} route={route} />
     </GetSession>
   </body>
 </html>

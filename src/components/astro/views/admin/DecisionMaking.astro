@@ -1,0 +1,58 @@
+---
+import DesicionMakingConfig from "@/config/desicionmaking.json";
+import {  GetTableResults,  GetRecommendations } from "@/preact/views/admin/desicionmaking";
+
+export interface Props {
+  subTitle: string;
+}
+
+const { subTitle } = Astro.props as Props;
+
+const _desicionParams = DesicionMakingConfig;
+---
+
+<h2
+  class="absolute inset-x-9 top-10 text-center text-lg font-bold p-12 text-gray-200"
+>
+  {subTitle}
+</h2>
+
+<div
+  class="absolute lg:top-20 sm:top-24 bottom-10 lg:m-14 sm:m-10 left-0 right-0"
+>
+  <div
+    class="overflow-x-hidden w-full h-full bg-slate-200 bg-opacity-90 rounded-xl"
+  >
+    <div class="lg:m-5 sm:m-5">
+      <div>
+        <div class="text-black text-center text-xl">
+          Estos son los resultados arrojados a grandes rasgos después de hacer
+          el respectivo análisis...
+        </div>
+        <br />
+        <div class="grid items-center justify-center mt-2 text-sm">
+          <GetTableResults client:only="preact" paramsDesicion={_desicionParams}
+          />
+        </div>
+      </div>
+      <div>
+        <br />
+        <br />
+        <div class="text-black text-center text-xl font-bold">
+          Recomendaciones SMARTCITIES AMB
+        </div>
+        <br />
+        <div class="lg:ml-10 lg:mr-10 mt-2 sm:ml-4 sm:mr-4 mb-10">
+          <div class="text-black text-center text-xl">
+            Recomendaciones por Categorías y SubCategorías...
+          </div>
+          <br />
+          <div class="grid items-center justify-center text-sm">
+            <GetRecommendations client:only="preact" paramsDesicion={_desicionParams}
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

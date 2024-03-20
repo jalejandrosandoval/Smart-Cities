@@ -1,0 +1,280 @@
+{
+  "Categories": [
+    {
+      "NameCategorie": "Sostenibilidad",
+      "Weight": "40",
+      "Score": "Medio",
+      "Icon": [
+        {
+          "path": {
+            "fillrule": "evenodd",
+            "d": "M11.622 1.602a.75.75 0 0 1 .756 0l2.25 1.313a.75.75 0 0 1-.756 1.295L12 3.118 10.128 4.21a.75.75 0 1 1-.756-1.295l2.25-1.313ZM5.898 5.81a.75.75 0 0 1-.27 1.025l-1.14.665 1.14.665a.75.75 0 1 1-.756 1.295L3.75 8.806v.944a.75.75 0 0 1-1.5 0V7.5a.75.75 0 0 1 .372-.648l2.25-1.312a.75.75 0 0 1 1.026.27Zm12.204 0a.75.75 0 0 1 1.026-.27l2.25 1.312a.75.75 0 0 1 .372.648v2.25a.75.75 0 0 1-1.5 0v-.944l-1.122.654a.75.75 0 1 1-.756-1.295l1.14-.665-1.14-.665a.75.75 0 0 1-.27-1.025Zm-9 5.25a.75.75 0 0 1 1.026-.27L12 11.882l1.872-1.092a.75.75 0 1 1 .756 1.295l-1.878 1.096V15a.75.75 0 0 1-1.5 0v-1.82l-1.878-1.095a.75.75 0 0 1-.27-1.025ZM3 13.5a.75.75 0 0 1 .75.75v1.82l1.878 1.095a.75.75 0 1 1-.756 1.295l-2.25-1.312a.75.75 0 0 1-.372-.648v-2.25A.75.75 0 0 1 3 13.5Zm18 0a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-.372.648l-2.25 1.312a.75.75 0 1 1-.756-1.295l1.878-1.096V14.25a.75.75 0 0 1 .75-.75Zm-9 5.25a.75.75 0 0 1 .75.75v.944l1.122-.654a.75.75 0 1 1 .756 1.295l-2.25 1.313a.75.75 0 0 1-.756 0l-2.25-1.313a.75.75 0 1 1 .756-1.295l1.122.654V19.5a.75.75 0 0 1 .75-.75Z",
+            "cliprule": "evenodd"
+          }
+        }
+      ],
+      "SubCategories": [
+        {
+          "NameSubCategorie": "Energías Verdes",
+          "Weight": "5",
+          "Score": "Medio",
+          "Recomendations": [
+            {
+              "Level": "Alto",
+              "Recomendation": "Los entes de control, de gestión o empresas privadas, pueden seguir con su proceso actual de implementación de proyectos de tecnologías innovadoras, frente a las energías verdes, sin embargo, se tiene el potencial de mejorar."
+            },
+            {
+              "Level": "Medio",
+              "Recomendation": "Los entes de control, de gestión o empresas privadas, tienen el potencial de mejorar su proceso, frente a las energías verdes, promoviendo y creando nuevas estrategias que ayuden a este fin."
+            },
+            {
+              "Level": "Bajo",
+              "Recomendation": "Los entes de control, de gestión o empresas privadas, deben promover, crear, desarrollar e implementar nuevos proyectos o estrategias que contribuyan a las energías verdes y que así mismo los ciudadanos conozcan y están al tanto de estas."
+            }
+          ]
+        },
+        {
+          "NameSubCategorie": "Combustibles Fósiles",
+          "Weight": "15",
+          "Score": "Medio",
+          "Recomendations": [
+            {
+              "Level": "Alto",
+              "Recomendation": "Los entes de control, de gestión o empresas privadas, podrán continuar con las estrategias que han implementado en la actualidad motivando e incentivando el desuso de este tipo de combustibles."
+            },
+            {
+              "Level": "Medio",
+              "Recomendation": "Los entes de control, de gestión o empresas privadas, podrán establecer mejoras en las estrategias que en la actualidad implementan o desarrollan, para que los ciudadanos dejen de recurrir a este tipo de combustibles como una forma de movilidad."
+            },
+            {
+              "Level": "Bajo",
+              "Recomendation": "Los entes de control, de gestión o empresas privadas, deben establecer mecanismos que ayuden a los ciudadanos del AMB a tener una mejor conciencia del uso de estos tipos de combustibles, esto con el fin de mitigar su uso o en su defecto reemplazarlo mediante otros."
+            }
+          ]
+        },
+        {
+          "NameSubCategorie": "Economía",
+          "Weight": "15",
+          "Score": "Medio",
+          "Recomendations": [
+            {
+              "Level": "Alto",
+              "Recomendation": "Los entes de control, de gestión o empresas privadas, cuentan con mecanismos adecuados a nivel económico en el ámbito de la inversión y manejo de recursos de la movilidad."
+            },
+            {
+              "Level": "Medio",
+              "Recomendation": "Los entes de control, de gestión o empresas privadas, pueden continuar con la proyección de nuevos mecanismos que sean adecuados y permitan tener una mejor inversión y manejo de recursos en la movilidad del AMB."
+            },
+            {
+              "Level": "Bajo",
+              "Recomendation": "Los entes de control, de gestión o empresas privadas, carecen de mecanismos adecuados a nivel económico en el ámbito de la inversión y manejo de recursos de la movilidad."
+            }
+          ]
+        },
+        {
+          "NameSubCategorie": "Transporte Alternativo",
+          "Weight": "5",
+          "Score": "Bajo",
+          "Recomendations": [
+            {
+              "Level": "Alto",
+              "Recomendation": "Los entes de control, de gestión o empresas privadas, pueden seguir fortaleciendo sus políticas, estrategias, alternativas y proyectos actuales para incentivar el uso del transporte alternativo."
+            },
+            {
+              "Level": "Medio",
+              "Recomendation": "Los entes de control, de gestión o empresas privadas, pueden permitirse fortalecer a nivel adecuado todas sus políticas, estrategias, alternativas y proyectos actuales para incentivar el uso del transporte alternativo."
+            },
+            {
+              "Level": "Bajo",
+              "Recomendation": "Los entes de control, de gestión o empresas privadas, deben avanzar e incentivar aún más sus políticas, estrategias, alternativas y proyectos actuales para incentivar el uso del transporte alternativo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NameCategorie": "Infraestructura y Seguridad",
+      "Weight": "30",
+      "Score": "Medio",
+      "Icon": [
+        {
+          "path": {
+            "fillrule": "evenodd",
+            "d": "M12 1.5a5.25 5.25 0 0 0-5.25 5.25v3a3 3 0 0 0-3 3v6.75a3 3 0 0 0 3 3h10.5a3 3 0 0 0 3-3v-6.75a3 3 0 0 0-3-3v-3c0-2.9-2.35-5.25-5.25-5.25Zm3.75 8.25v-3a3.75 3.75 0 1 0-7.5 0v3h7.5Z",
+            "cliprule": "evenodd"
+          }
+        }
+      ],
+      "SubCategories": [
+        {
+          "NameSubCategorie": "Cámaras",
+          "Weight": "5",
+          "Score": "Medio",
+          "Recomendations": [
+            {
+              "Level": "Alto",
+              "Recomendation": "Los entes de control, de gestión o empresas privadas, cuentan con planes idóneos y adecuados para el manejo de la seguridad de los ciudadanos del AMB a través del uso de cámaras de videovigilancia."
+            },
+            {
+              "Level": "Medio",
+              "Recomendation": "Los entes de control, de gestión o empresas privadas, cuentan con planes idóneos y adecuados para el manejo de la seguridad de los ciudadanos del AMB a través del uso de cámaras de videovigilancia, sin embargo, se deben establecer mejores estrategias para mejorar en este ámbito."
+            },
+            {
+              "Level": "Bajo",
+              "Recomendation": "Los entes de control, de gestión o empresas privadas, no cuentan con planes idóneos y adecuados para el manejo de la seguridad de los ciudadanos del AMB a través del uso de cámaras de videovigilancia."
+            }
+          ]
+        },
+        {
+          "NameSubCategorie": "Semaforización y Señalización",
+          "Weight": "10",
+          "Score": "Medio",
+          "Recomendations": [
+            {
+              "Level": "Alto",
+              "Recomendation": "Los entes de control, de gestión o empresas privadas, pueden continuar con las estrategias actuales para mejorar y mantener adecuadamente la semaforización y señalización vial del AMB."
+            },
+            {
+              "Level": "Medio",
+              "Recomendation": "Los entes de control, de gestión o empresas privadas, deben aumentar y mejorar las estrategias actuales para mejorar y mantener adecuadamente la semaforización y señalización vial del AMB."
+            },
+            {
+              "Level": "Bajo",
+              "Recomendation": "Los entes de control, de gestión o empresas privadas, necesitan concentrar recursos tanto físicos, humanos y económicos en el mantenimiento y mejoramiento de la semaforización y señalización vial del AMB."
+            }
+          ]
+        },
+        {
+          "NameSubCategorie": "Vías y Andenes",
+          "Weight": "5",
+          "Score": "Alto",
+          "Recomendations": [
+            {
+              "Level": "Alto",
+              "Recomendation": "Los entes de control, de gestión o empresas privadas, cuentan con mecanismos idóneos para el manejo y gestión de recursos dirigidos para el mantenimiento de vías y andenes del AMB junto con la creación de nuevos espacios de esta índole."
+            },
+            {
+              "Level": "Medio",
+              "Recomendation": "Los entes de control, de gestión o empresas privadas, cuentan con mecanismos idóneos para el manejo y gestión de recursos dirigidos para el mantenimiento de vías y andenes del AMB junto con la creación de nuevos espacios de esta índole."
+            },
+            {
+              "Level": "Bajo",
+              "Recomendation": "Los entes de control, de gestión o empresas privadas, no cuentan con mecanismos idóneos para el manejo y gestión de recursos dirigidos para el mantenimiento de vías y andenes del AMB junto con la creación de nuevos espacios de esta índole."
+            }
+          ]
+        },
+        {
+          "NameSubCategorie": "Iluminación",
+          "Weight": "10",
+          "Score": "Medio",
+          "Recomendations": [
+            {
+              "Level": "Alto",
+              "Recomendation": "Los entes de control, de gestión o empresas privadas, tienen proyectos y estrategias idóneas para el manejo de la iluminación vial en el AMB."
+            },
+            {
+              "Level": "Medio",
+              "Recomendation": "Los entes de control, de gestión o empresas privadas, pueden permitirse incentivar la creación y asignación de más luminarias en puntos que no sean estratégicos para mejorar la percepción ciudadana de seguridad vial en el AMB."
+            },
+            {
+              "Level": "Bajo",
+              "Recomendation": "Los entes de control, de gestión o empresas privadas, requieren la creación de nuevas estrategias en cuanto a la iluminación del AMB permitiendo y haciendo el uso de nuevas tecnologías en este ámbito."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NameCategorie": "Hábitat Urbano y Convivencia",
+      "Weight": "30",
+      "Score": "Bajo",
+      "Icon": [
+        {
+          "path": {
+            "fillrule": "evenodd",
+            "d": "M3.019 11.114 18 5.667v3.421l4.006 1.457a.75.75 0 1 1-.512 1.41l-.494-.18v8.475h.75a.75.75 0 0 1 0 1.5H2.25a.75.75 0 0 1 0-1.5H3v-9.129l.019-.007ZM18 20.25v-9.566l1.5.546v9.02H18Zm-9-6a.75.75 0 0 0-.75.75v4.5c0 .414.336.75.75.75h3a.75.75 0 0 0 .75-.75V15a.75.75 0 0 0-.75-.75H9Z",
+            "cliprule": "evenodd"
+          }
+        }
+      ],
+      "SubCategories": [
+        {
+          "NameSubCategorie": "Congestión Vial",
+          "Weight": "10",
+          "Score": "Bajo",
+          "Recomendations": [
+            {
+              "Level": "Alto",
+              "Recomendation": "Los entes de control, de gestión o empresas privadas, tienen proyectos y estrategias idóneas para el manejo de la congestión vial en el AMB."
+            },
+            {
+              "Level": "Medio",
+              "Recomendation": "Los entes de control, de gestión o empresas privadas, tienen el potencial de definir y ejecutar mejores proyectos y estrategias que sean mucho más asertivas en este ámbito."
+            },
+            {
+              "Level": "Bajo",
+              "Recomendation": "Los entes de control, de gestión o empresas privadas, carecen de proyectos y estrategias idóneas para el manejo del flujo vehicular en el AMB"
+            }
+          ]
+        },
+        {
+          "NameSubCategorie": "Calidad de Vida",
+          "Weight": "10",
+          "Score": "Bajo",
+          "Recomendations": [
+            {
+              "Level": "Alto",
+              "Recomendation": "Los entes de control, de gestión o empresas privadas, promueven y establecen mecanismos eficaces que contribuyen a mejorar la calidad de vida los ciudadanos del AMB."
+            },
+            {
+              "Level": "Medio",
+              "Recomendation": "Los entes de control, de gestión o empresas privadas, tienen el potencial de mejorar los mecanismos, frente a la calidad de vida de los ciudadanos del AMB."
+            },
+            {
+              "Level": "Bajo",
+              "Recomendation": "Los entes de control, de gestión o empresas privadas, deben establecer mecanismos más eficaces que ayuden a los ciudadanos del AMB a tener una mejor calidad de vida."
+            }
+          ]
+        },
+        {
+          "NameSubCategorie": "Contaminación Ambiental",
+          "Weight": "6",
+          "Score": "Medio",
+          "Recomendations": [
+            {
+              "Level": "Alto",
+              "Recomendation": "Los entes de control, de gestión o empresas privadas, fomentan adecuadamente la protección del medio ambiente a través del establecimiento de diferentes programas, consejos y mecanismos."
+            },
+            {
+              "Level": "Medio",
+              "Recomendation": "Los entes de control, de gestión o empresas privadas, deben establecer mejores controles sobre este ámbito, debido a que la ciudadanía no está del todo de acuerdo con las pautas implementadas en este eje."
+            },
+            {
+              "Level": "Bajo",
+              "Recomendation": "Los entes de control, de gestión o empresas privadas, no fomentan adecuadamente la protección del medio ambiente por lo cual la ciudadanía percibe que no se existe algún control sobre este eje en la movilidad."
+            }
+          ]
+        },
+        {
+          "NameSubCategorie": "Parqueaderos",
+          "Weight": "4",
+          "Score": "Medio",
+          "Recomendations": [
+            {
+              "Level": "Alto",
+              "Recomendation": "Los entes de control, de gestión o empresas privadas, conciben de manera idónea la proyección y distribución de estos espacios para facilitar la movilidad de los ciudadanos del AMB."
+            },
+            {
+              "Level": "Medio",
+              "Recomendation": "Los entes de control, de gestión o empresas privadas, deben crear mejores planes que tengan en cuenta la creación de estos espacios para los ciudadanos del AMB."
+            },
+            {
+              "Level": "Bajo",
+              "Recomendation": "Los entes de control, de gestión o empresas privadas, no desarrollan ni permiten la creación de estos espacios en áreas estratégicas que faciliten la movilidad y el flujo vehicular en la ciudad."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

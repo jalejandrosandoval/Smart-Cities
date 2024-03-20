@@ -1,7 +1,15 @@
+---
+export interface Props {
+  subTitle: string;
+}
+
+const { subTitle } = Astro.props as Props;
+---
+
 <h2
   class="absolute inset-x-9 top-9 text-center text-lg font-bold p-10 text-gray-200"
 >
-  Encuesta
+  {subTitle}
 </h2>
 <div
   transition:animate="fade"

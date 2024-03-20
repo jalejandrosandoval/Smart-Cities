@@ -1,0 +1,51 @@
+---
+import DefaultUser from "@/astro/views/users/DefaultUser.astro";
+import Inquiry from "@/astro/views/users/Inquiry.astro";
+import NavBar from "@/astro/shared/NavBar.astro";
+import { GetProfile } from "@/preact/auth/profiles";
+import Copyright from "@/astro/shared/Copyright.astro";
+import { LoadScriptBackground } from "@/preact/utils/utils";
+import Reports from "@/astro/views/admin/Reports.astro";
+import DecisionMaking from "@/astro/views/admin/DecisionMaking.astro";
+import { useEffect, useState } from "preact/hooks";
+
+export interface Props {
+  subTitle: string;
+  route: string;
+}
+
+const { subTitle, route } = Astro.props as Props;
+---
+
+<LoadScriptBackground client:only="preact" />
+
+<div
+  class="relative w-full overflow-hidden h-screen bg-gray-800"
+  id="particles-js"
+>
+  <div class="absolute inset-x-0 top-0 z-50">
+    <NavBar />
+  </div>
+
+  {
+    () => {
+      const test = <GetProfile client:only="preact" />;
+      console.log(test);
+      switch (route) {
+        case "default":
+          return <DefaultUser subTitle={subTitle} />;
+        case "inquiry":
+          return <Inquiry subTitle={subTitle} />;
+        case "reports":
+          return <Reports subTitle={subTitle} />;
+        case "decisionmaking":
+          return <DecisionMaking subTitle={subTitle} />;
+        default:
+          break;
+      }
+    }
+  }
+  <div class="absolute inset-x-0 bottom-0">
+    <Copyright />
+  </div>
+</div>
